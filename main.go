@@ -5,10 +5,10 @@ import (
 	"runtime/debug"
 )
 
-var SemVer = "v0.0.0"
+var SemVer = "v0"
 
 func GetSemverInfo() string {
-	if SemVer != "v0.0.0" {
+	if SemVer != "v0" {
 		return SemVer
 	}
 	version, ok := debug.ReadBuildInfo()
